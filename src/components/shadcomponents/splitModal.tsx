@@ -6,8 +6,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../../../components/ui/dialog'
-import { Button } from '../../../components/ui/button'
+} from '../ui/dialog'
+import { Button } from '../ui/button'
 import { Compiler, Editor, Error, PropTypes, useView } from 'react-view'
 import presetTypescript from '@babel/preset-typescript'
 
@@ -16,7 +16,7 @@ export default () => {
     componentName: 'Dialog',
     props: {
       children: {
-        value: '<DialogTrigger>Open</DialogTrigger>\n' +
+        value: '<DialogTrigger>Show Example</DialogTrigger>\n' +
           '    <DialogContent>\n' +
           '      <div style={{ marginTop: \'1vh\' }} className={\'grid grid-cols-2\'}>\n' +
           '        <div><img\n' +
