@@ -8,8 +8,8 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-} from "../components/ui/dialog"
-import {Button} from "../components/ui/button"
+} from "../../../components/ui/dialog"
+import {Button} from "../../../components/ui/button"
 
 export default class Home extends Component<{}, {}> {
     render(): JSX.Element {
@@ -38,27 +38,39 @@ export default class Home extends Component<{}, {}> {
                     componentName={"Dialog"}
                     props={{
                         children: {
-                            value: '<DialogTrigger>Show Modal</DialogTrigger>\n' +
-                                '  <DialogContent>\n' +
-                                '    <DialogHeader>\n' +
-                                '      <DialogTitle>Are you absolutely sure?</DialogTitle>\n' +
-                                '      <DialogDescription>\n' +
-                                '        This action cannot be undone. This will permanently delete your account\n' +
-                                '        and remove your data from our servers.\n' +
-                                '      </DialogDescription>\n' +
-                                '    </DialogHeader>\n' +
-                                '  </DialogContent>',
+                            value: '<Dialog>\n' +
+                                '   <DialogTrigger>Open</DialogTrigger>\n' +
+                                '   <DialogContent>\n' +
+                                '       <img style={{marginTop: \'1vw\'}}\n' +
+                                '           src="https://fastly.picsum.photos/id/817/500/300.jpg?hmac=YepWK_ujczi0SlqEvc2ZsSgaDvQrHOvMuSEFXYtOIsY"\n' +
+                                '           width={"500"} ' +
+                                'height={"300"}' +
+                                '\n       />\n' +
+                                '       <DialogHeader>\n' +
+                                '<DialogTitle>Modal Title</DialogTitle>\n' +
+                                '<DialogDescription>\n' +
+                                'Modal Description\n' +
+                                '</DialogDescription>\n' +
+                                '</DialogHeader>\n' +
+                                '<DialogFooter>\n' +
+                                '<Button>CTA Button 1</Button>\n' +
+                                '<Button>CTA Button 2</Button>\n' +
+                                '</DialogFooter>\n' +
+                                '</DialogContent>\n' +
+                                '</Dialog>',
                             type: PropTypes.ReactNode,
-                            description: 'Visible label.',
+                            description: 'Implementation of Dialog',
                         },
                     }}
                     scope={{
                         Dialog,
                         DialogContent,
                         DialogDescription,
+                        DialogFooter,
                         DialogHeader,
                         DialogTitle,
                         DialogTrigger,
+                        Button
                     }}
                     imports={{
                         "@/components/ui/dialog": {
@@ -68,6 +80,9 @@ export default class Home extends Component<{}, {}> {
                                 "DialogHeader",
                                 "DialogTitle",
                                 "DialogTrigger",]
+                        },
+                        "@/components/ui/button": {
+                            named: ["Button"]
                         }
                     }
                     }
