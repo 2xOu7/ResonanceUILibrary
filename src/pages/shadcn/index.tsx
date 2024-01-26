@@ -5,7 +5,8 @@ import SplitModal from '../../components/shadcomponents/splitModal'
 import TooltipOneCta from '../../components/shadcomponents/tooltipOneCta'
 import TooltipTwoCta from '../../components/shadcomponents/tooltipTwoCta'
 import TooltipPicture from '../../components/shadcomponents/tooltipPicture'
-import Banner from '../../components/shadcomponents/card'
+import Card from '../../components/shadcomponents/card'
+import Banner from '../../components/shadcomponents/banner'
 
 export default class ShadCn extends Component<{}, {}> {
   render(): JSX.Element {
@@ -89,7 +90,7 @@ export default class ShadCn extends Component<{}, {}> {
             ),
             pane: (
               <Tab.Pane attached={false}>
-                <Banner />
+                <Card />
               </Tab.Pane>
             ),
           },
