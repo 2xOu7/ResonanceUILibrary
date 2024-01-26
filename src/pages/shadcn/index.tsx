@@ -12,6 +12,7 @@ export default class ShadCn extends Component<{}, {}> {
       <title>Resonance shadcn Examples</title>
       <h1 style={{ textAlign: 'center', marginBottom: '5vh' }}>Resonance shadcn Examples</h1>
       <Tab
+        style={{marginLeft: '1vw', marginRight: '1vw'}}
         grid={{ paneWidth: 13, tabWidth: 3 }}
         renderActiveOnly={false}
         menu={{
