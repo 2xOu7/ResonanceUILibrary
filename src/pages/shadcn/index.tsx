@@ -2,13 +2,18 @@ import React, { Component } from 'react'
 import { Menu, Tab } from 'semantic-ui-react'
 import OverlayModal from '../../components/shadcomponents/overlayModal'
 import SplitModal from '../../components/shadcomponents/splitModal'
+import TooltipOneCta from '../../components/shadcomponents/tooltipOneCta'
+import TooltipTwoCta from '../../components/shadcomponents/tooltipTwoCta'
+import TooltipPicture from '../../components/shadcomponents/tooltipPicture'
 
 export default class ShadCn extends Component<{}, {}> {
   render(): JSX.Element {
     return <div>
       <title>Resonance shadcn Examples</title>
-      <h1 style={{textAlign: 'center', marginBottom: '5vh'}}>Resonance shadcn Examples</h1>
+      <h1 style={{ textAlign: 'center', marginBottom: '5vh' }}>Resonance shadcn Examples</h1>
       <Tab
+        style={{marginLeft: '1vw', marginRight: '1vw'}}
+        grid={{ paneWidth: 13, tabWidth: 3 }}
         renderActiveOnly={false}
         menu={{
           fluid: true,
@@ -48,7 +53,7 @@ export default class ShadCn extends Component<{}, {}> {
             ),
             pane: (
               <Tab.Pane attached={false}>
-                <SplitModal />
+                <TooltipOneCta />
               </Tab.Pane>
             ),
           },
@@ -60,10 +65,10 @@ export default class ShadCn extends Component<{}, {}> {
             ),
             pane: (
               <Tab.Pane attached={false}>
-                <SplitModal />
+                <TooltipTwoCta />
               </Tab.Pane>
             ),
-          },{
+          }, {
             menuItem: (
               <Menu.Item>
                 Tooltip With Picture
@@ -71,7 +76,7 @@ export default class ShadCn extends Component<{}, {}> {
             ),
             pane: (
               <Tab.Pane attached={false}>
-                <SplitModal />
+                <TooltipPicture />
               </Tab.Pane>
             ),
           },

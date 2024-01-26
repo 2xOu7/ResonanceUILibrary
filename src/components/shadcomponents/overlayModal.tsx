@@ -18,7 +18,7 @@ export default () => {
     props: {
       children: {
         value:
-          '<DialogTrigger>Show Example</DialogTrigger>\n' +
+          '<DialogTrigger>Click To Show Example</DialogTrigger>\n' +
           '   <DialogContent>\n' +
           '       <img style={{marginTop: \'1vw\'}}\n' +
           '           src="https://fastly.picsum.photos/id/817/500/300.jpg?hmac=YepWK_ujczi0SlqEvc2ZsSgaDvQrHOvMuSEFXYtOIsY"\n' +
