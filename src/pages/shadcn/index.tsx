@@ -5,6 +5,8 @@ import SplitModal from '../../components/shadcomponents/splitModal'
 import TooltipOneCta from '../../components/shadcomponents/tooltipOneCta'
 import TooltipTwoCta from '../../components/shadcomponents/tooltipTwoCta'
 import TooltipPicture from '../../components/shadcomponents/tooltipPicture'
+import Banner from '../../components/shadcomponents/banner'
+
 
 export default class ShadCn extends Component<{}, {}> {
   render(): JSX.Element {
@@ -12,7 +14,7 @@ export default class ShadCn extends Component<{}, {}> {
       <title>Resonance shadcn Examples</title>
       <h1 style={{ textAlign: 'center', marginBottom: '5vh' }}>Resonance shadcn Examples</h1>
       <Tab
-        style={{marginLeft: '1vw', marginRight: '1vw'}}
+        style={{ marginLeft: '1vw', marginRight: '1vw' }}
         grid={{ paneWidth: 13, tabWidth: 3 }}
         renderActiveOnly={false}
         menu={{
@@ -68,7 +70,8 @@ export default class ShadCn extends Component<{}, {}> {
                 <TooltipTwoCta />
               </Tab.Pane>
             ),
-          }, {
+          },
+          {
             menuItem: (
               <Menu.Item>
                 Tooltip With Picture
@@ -80,7 +83,18 @@ export default class ShadCn extends Component<{}, {}> {
               </Tab.Pane>
             ),
           },
-
+          {
+            menuItem: (
+              <Menu.Item>
+                Banner
+              </Menu.Item>
+            ),
+            pane: (
+              <Tab.Pane attached={false}>
+                <Banner />
+              </Tab.Pane>
+            ),
+          },
         ]}
       />
     </div>
