@@ -16,7 +16,6 @@ export default class ShadCn extends Component<{}, {}> {
         {
           menuItem: (
             <Menu.Item>
-              <Icon name={'edit'} />
               Modal With Overlay Picture
             </Menu.Item>
           ),
@@ -29,7 +28,6 @@ export default class ShadCn extends Component<{}, {}> {
         {
           menuItem: (
             <Menu.Item>
-              <Icon name={'edit'} />
               Modal With Split Picture
             </Menu.Item>
           ),
