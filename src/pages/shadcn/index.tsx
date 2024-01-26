@@ -5,7 +5,7 @@ import SplitModal from '../../components/shadcomponents/splitModal'
 import TooltipOneCta from '../../components/shadcomponents/tooltipOneCta'
 import TooltipTwoCta from '../../components/shadcomponents/tooltipTwoCta'
 import TooltipPicture from '../../components/shadcomponents/tooltipPicture'
-import Banner from '../../components/shadcomponents/banner'
+import Banner from '../../components/shadcomponents/card'
 
 export default class ShadCn extends Component<{}, {}> {
   render(): JSX.Element {
