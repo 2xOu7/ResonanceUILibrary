@@ -40,6 +40,42 @@ export default class ShadCn extends Component<{}, {}> {
               </Tab.Pane>
             ),
           },
+          {
+            menuItem: (
+              <Menu.Item>
+                Tooltip With One CTA
+              </Menu.Item>
+            ),
+            pane: (
+              <Tab.Pane attached={false}>
+                <SplitModal />
+              </Tab.Pane>
+            ),
+          },
+          {
+            menuItem: (
+              <Menu.Item>
+                Tooltip With Two CTA's
+              </Menu.Item>
+            ),
+            pane: (
+              <Tab.Pane attached={false}>
+                <SplitModal />
+              </Tab.Pane>
+            ),
+          },{
+            menuItem: (
+              <Menu.Item>
+                Tooltip With Picture
+              </Menu.Item>
+            ),
+            pane: (
+              <Tab.Pane attached={false}>
+                <SplitModal />
+              </Tab.Pane>
+            ),
+          },
+
         ]}
       />
     </div>
