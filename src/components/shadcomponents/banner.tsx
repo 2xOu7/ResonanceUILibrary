@@ -14,9 +14,10 @@ export default () => {
         </CardContent>
       </div>
       <div>
-        <div className={'flex justify-end items-center'} style={{marginTop: '5vh', marginRight: '1vw'}}>
+        <div className={'flex justify-end items-center'} style={{ marginTop: '5vh', marginRight: '1vw' }}>
           <Button style={{ backgroundColor: 'white', color: 'black' }}>CTA 1</Button>
           <Button>CTA 2</Button>
+          <Button style={{ backgroundColor: 'white', color: 'black', marginLeft: '1vw' }}>X</Button>
         </div>
       </div>
     </div>
