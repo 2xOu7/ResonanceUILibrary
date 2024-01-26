@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Icon, Menu, Tab } from 'semantic-ui-react'
+import { Menu, Tab } from 'semantic-ui-react'
 import OverlayModal from '../../components/shadcomponents/overlayModal'
 import SplitModal from '../../components/shadcomponents/splitModal'
 
