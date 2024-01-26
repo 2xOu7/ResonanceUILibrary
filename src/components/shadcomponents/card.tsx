@@ -10,8 +10,8 @@ export default () => {
     <CardContent>
       <p>Card Content</p>
     </CardContent>
-    <CardFooter className={"flex justify-end"}>
-      <Button style={{backgroundColor: 'white', color: 'black'}}>CTA 1</Button>
+    <CardFooter className={'flex justify-end'}>
+      <Button style={{ backgroundColor: 'white', color: 'black' }}>CTA 1</Button>
       <Button>CTA 2</Button>
     </CardFooter>
   </Card>
