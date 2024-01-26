@@ -17,8 +17,8 @@ export default () => {
     componentName: 'Dialog',
     props: {
       children: {
-        value: '<Dialog>\n' +
-          '   <DialogTrigger>Open</DialogTrigger>\n' +
+        value:
+          '<DialogTrigger>Open</DialogTrigger>\n' +
           '   <DialogContent>\n' +
           '       <img style={{marginTop: \'1vw\'}}\n' +
           '           src="https://fastly.picsum.photos/id/817/500/300.jpg?hmac=YepWK_ujczi0SlqEvc2ZsSgaDvQrHOvMuSEFXYtOIsY"\n' +
@@ -35,8 +35,7 @@ export default () => {
           '<Button>CTA Button 1</Button>\n' +
           '<Button>CTA Button 2</Button>\n' +
           '</DialogFooter>\n' +
-          '</DialogContent>\n' +
-          '</Dialog>',
+          '</DialogContent>\n',
         type: PropTypes.ReactNode,
         description: 'Implementation of Dialog',
       },
