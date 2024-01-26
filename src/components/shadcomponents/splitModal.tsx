@@ -16,7 +16,7 @@ export default () => {
     componentName: 'Dialog',
     props: {
       children: {
-        value: '<DialogTrigger>Show Example</DialogTrigger>\n' +
+        value: '<DialogTrigger>Click To Show Example</DialogTrigger>\n' +
           '    <DialogContent>\n' +
           '      <div style={{ marginTop: \'1vh\' }} className={\'grid grid-cols-2\'}>\n' +
           '        <div><img\n' +
