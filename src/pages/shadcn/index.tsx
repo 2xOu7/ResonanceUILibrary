@@ -93,6 +93,18 @@ export default class ShadCn extends Component<{}, {}> {
               </Tab.Pane>
             ),
           },
+          {
+            menuItem: (
+              <Menu.Item>
+                Banner
+              </Menu.Item>
+            ),
+            pane: (
+              <Tab.Pane attached={false}>
+                <Banner />
+              </Tab.Pane>
+            ),
+          },
         ]}
       />
     </div>
