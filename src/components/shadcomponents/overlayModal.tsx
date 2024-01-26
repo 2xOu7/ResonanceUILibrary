@@ -9,8 +9,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../../../components/ui/dialog'
-import { Button } from '../../../components/ui/button'
+} from '../ui/dialog'
+import { Button } from '../ui/button'
 
 export default () => {
   const params = useView({
@@ -18,7 +18,7 @@ export default () => {
     props: {
       children: {
         value:
-          '<DialogTrigger>Open</DialogTrigger>\n' +
+          '<DialogTrigger>Show Example</DialogTrigger>\n' +
           '   <DialogContent>\n' +
           '       <img style={{marginTop: \'1vw\'}}\n' +
           '           src="https://fastly.picsum.photos/id/817/500/300.jpg?hmac=YepWK_ujczi0SlqEvc2ZsSgaDvQrHOvMuSEFXYtOIsY"\n' +
