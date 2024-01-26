@@ -3,6 +3,8 @@ import { Menu, Tab } from 'semantic-ui-react'
 import OverlayModal from '../../components/shadcomponents/overlayModal'
 import SplitModal from '../../components/shadcomponents/splitModal'
 import TooltipOneCta from '../../components/shadcomponents/tooltipOneCta'
+import TooltipTwoCta from '../../components/shadcomponents/tooltipTwoCta'
+
 
 export default class ShadCn extends Component<{}, {}> {
   render(): JSX.Element {
@@ -61,7 +63,7 @@ export default class ShadCn extends Component<{}, {}> {
             ),
             pane: (
               <Tab.Pane attached={false}>
-                <SplitModal />
+                <TooltipTwoCta />
               </Tab.Pane>
             ),
           },{

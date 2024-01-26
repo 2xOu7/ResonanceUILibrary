@@ -15,7 +15,8 @@ export default () => {
         <TooltipArrow />
         <br />
         <br />
-        <Button style={{ float: 'right' }}>CTA</Button>
+        <Button style={{ float: 'right' }}>CTA 1</Button>
+        <Button style={{ float: 'right', backgroundColor: 'white', color: 'black' }}>CTA 2</Button>
       </TooltipContent></Tooltip>
   </TooltipProvider>
 }
