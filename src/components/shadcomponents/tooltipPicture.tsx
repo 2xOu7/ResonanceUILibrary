@@ -12,7 +12,7 @@ export default () => {
     props: {
       children: {
         value: '<Tooltip>\n' +
-          '    <TooltipTrigger>\n' +
+          '    <TooltipTrigger style={{marginBottom:"10px"}}>\n' +
           '      Hover To Show Example\n' +
           '    </TooltipTrigger>\n' +
           '    <TooltipContent\n' +
