@@ -18,10 +18,10 @@ jobs:
       timeout-minutes: 30
       run: exec porter apply -f ./porter.yaml
       env:
-        PORTER_CLUSTER: "3454"
+        PORTER_CLUSTER: "3495"
         PORTER_HOST: https://dashboard.getporter.dev
         PORTER_PR_NUMBER: ${{ github.event.number }}
         PORTER_PROJECT: "10585"
         PORTER_STACK_NAME: resonance-ui-library
         PORTER_TAG: ${{ steps.vars.outputs.sha_short }}
-        PORTER_TOKEN: ${{ secrets.PORTER_STACK_10585_3454 }}
+        PORTER_TOKEN: ${{ secrets.PORTER_STACK_10585_3495 }}
