@@ -12,8 +12,9 @@ export default () => {
     props: {
       children: {
         value: '<Tooltip>\n' +
-          '    <TooltipTrigger>Hover To Show Example</TooltipTrigger>\n' +
+          '    <TooltipTrigger style={{marginBottom:"10px"}}>Hover To Show Example</TooltipTrigger>\n' +
           '    <TooltipContent style={{ minWidth: \'200px\', maxWidth: \'400px\', overflowWrap: \'break-word\' }}>\n' +
+          '<Button style={{float: \'right\', color: \'black\', backgroundColor: \'white\'}}>X</Button><br/>' +
           '      <Label><h3>Tooltip Title</h3></Label>\n' +
           '      <br />\n' +
           '      <Label>Tooltip Description</Label>\n' +

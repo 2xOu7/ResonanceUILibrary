@@ -12,7 +12,7 @@ export default () => {
     props: {
       children: {
         value: '<Tooltip>\n' +
-          '    <TooltipTrigger>\n' +
+          '    <TooltipTrigger style={{marginBottom:"10px"}}>\n' +
           '      Hover To Show Example\n' +
           '    </TooltipTrigger>\n' +
           '    <TooltipContent\n' +
@@ -22,6 +22,10 @@ export default () => {
           '        overflowWrap: "break-word"\n' +
           '      }}\n' +
           '    >\n' +
+          '<Button style={{float: \'right\', color: \'black\', backgroundColor: \'white\'}}>X</Button><br/>' +
+          '      <Label>\n' +
+          '        <h3>Tooltip Title</h3>\n' +
+          '      </Label>\n' +
           '      <img\n' +
           '        style={{\n' +
           '          marginTop: "1vw"\n' +
@@ -31,10 +35,6 @@ export default () => {
           '        height={"200"}\n' +
           '      />\n' +
           '      <br/>\n' +
-          '      <Label>\n' +
-          '        <h3>Tooltip Title</h3>\n' +
-          '      </Label>\n' +
-          '      <br />\n' +
           '      <Label>Tooltip Description</Label>\n' +
           '      <TooltipArrow />\n' +
           '      <br />\n' +

@@ -2,7 +2,8 @@ import React from 'react'
 import {
   Dialog,
   DialogContent,
-  DialogDescription, DialogFooter,
+  DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -16,7 +17,7 @@ export default () => {
     componentName: 'Dialog',
     props: {
       children: {
-        value: '<DialogTrigger>Click To Show Example</DialogTrigger>\n' +
+        value: '<DialogTrigger style={{marginBottom:"10px"}}>Click To Show Example</DialogTrigger>\n' +
           '    <DialogContent>\n' +
           '      <div style={{ marginTop: \'1vh\' }} className={\'grid grid-cols-2\'}>\n' +
           '        <div><img\n' +
